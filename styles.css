@@ -1,0 +1,40 @@
+/* Limit width of main and center it */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* More specific selector for profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Styles for aside */
+aside {
+  width: 300px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Image inside aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Remove padding from all paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 10px;
+}
