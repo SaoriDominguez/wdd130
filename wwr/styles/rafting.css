@@ -186,3 +186,18 @@ footer {
 .socialmedia a:hover {
   text-decoration: underline;
 }
+/* 1. Only paragraphs and list items in Royal Blue */
+p,
+#courses li,
+#contact-details li,
+.hero article p {
+  color: var(--secondary-color);
+}
+
+/* 2. Uniform, smaller social‐media icons */
+.socialmedia img {
+  width: 24px;
+  height: auto;
+  margin: 0 8px;
+  vertical-align: middle;
+}
