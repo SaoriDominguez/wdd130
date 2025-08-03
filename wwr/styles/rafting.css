@@ -1,0 +1,188 @@
+:root {
+  --primary-color: #3A5F0B;
+  --secondary-color: #0A2463;
+  --accent1-color: #FFD700;
+  --accent2-color: #8DB38B;
+  --heading-font: 'Bebas Neue', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global typography */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Centered layout */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Header - logo centered above nav */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 16px;
+}
+header img {
+  height: 60px;
+  margin-bottom: 12px;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 4px;
+  padding: 8px;
+  border-radius: 4px;
+}
+header nav a:hover {
+  background-color: var(--accent2-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 32px;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #fff;
+  opacity: 0.8;
+}
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 12px;
+  border-radius: 4px;
+}
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 8px;
+}
+
+/* History Section */
+section#history {
+  margin-bottom: 32px;
+}
+
+/* Adventure Section (single image centered) */
+section#adventure img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 32px;
+}
+
+/* Rafting Trip Types Grid */
+#trip-types .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+#trip-types article {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+#trip-types article img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Certification Courses List */
+#courses ul {
+  list-style: disc inside;
+  margin-bottom: 32px;
+}
+#courses li {
+  margin-bottom: 8px;
+}
+
+/* Buffet & Food Challenges (image left, text right) */
+#buffet .food-grid {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+#buffet .food-grid figure img {
+  width: 150px;
+  height: auto;
+  margin-right: 16px;
+}
+#buffet .food-grid figure figcaption {
+  margin: 0;
+}
+
+/* Karaoke & Events (image left, text right) */
+#events figure {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+#events figure img {
+  width: 150px;
+  height: auto;
+  margin-right: 16px;
+}
+#events figure figcaption {
+  margin: 0;
+}
+
+/* Contact Details */
+#contact-details .contact-list {
+  list-style: none;
+  margin-bottom: 32px;
+}
+#contact-details li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  padding: 16px 0;
+  text-align: center;
+  border-top: 1px solid var(--accent2-color);
+}
+.socialmedia a {
+  margin: 0 8px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.socialmedia a:hover {
+  text-decoration: underline;
+}
