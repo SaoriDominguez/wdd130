@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,28 +18,31 @@
 <body>
   <header>
     <img src="images/rowordie-logo.png" alt="Row or Die Rafting Logo">
+    <h1>Row or Die Rafting</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero -->
     <div class="hero">
       <img src="images/rafting-hero.jpg" alt="Rafting in rapids">
-      <h1>Row or Die Rafting</h1>
+      <h2>We turn river chaos into core memories.</h2>
       <article>
         <img src="images/raft-family.jpg" alt="Happy family rafting">
         <p>
-          We turn river chaos into core memories. Whether you're here to conquer Class V rapids or just survive family bonding, our certified guides guarantee adrenaline, safety, and post-trip bragging rights. No passengers – only paddle warriors.
+          Whether you're here to conquer Class V rapids or just survive family bonding, our certified guides guarantee adrenaline, safety, and post-trip bragging rights. No passengers—only paddle warriors.
         </p>
       </article>
     </div>
 
-    <!-- History Section -->
+    <!-- History -->
     <section id="history">
       <h2>History</h2>
       <p>
@@ -46,87 +50,92 @@
       </p>
     </section>
 
-    <!-- Adventure Section -->
-<section id="adventure">
-  <h2>Adventure Awaits You!</h2>
-  <img src="images/raft-extreme.jpg"       alt="Class V rapid – Rapid Rebels">
-  <img src="images/raft-moonlight.jpg"     alt="Night rafting – Full Moon Madness">
-  <img src="images/raft-team.jpg"          alt="Corporate team building">
-  <img src="images/raft-eco.jpg"           alt="Eco Explorers nature trip">
-  <img src="images/raft-family.jpg"        alt="Family-friendly Baby Rapids">
-</section>
-
-    <!-- Rafting Trip Types Section -->
-    <section id="trip-types">
-      <h2>Rafting Trip Types</h2>
-      <div class="grid">
-        <article>
-          <img src="images/baby-rapids.jpg" alt="Baby Rapids – Family-Friendly | Class I–II">
-          <h3>Baby Rapids</h3>
-          <p>Family-Friendly | Class I–II</p>
-        </article>
-        <article>
-          <img src="images/rapid-rebels.jpg" alt="Rapid Rebels – Extreme | Class IV–V">
-          <h3>Rapid Rebels</h3>
-          <p>Extreme | Class IV–V</p>
-        </article>
-        <article>
-          <img src="images/full-moon-madness.jpg" alt="Full Moon Madness – Night Rafting">
-          <h3>Full Moon Madness</h3>
-          <p>Night Rafting</p>
-        </article>
-        <article>
-          <img src="images/corporate-warriors.jpg" alt="Corporate Warriors – Team Building">
-          <h3>Corporate Warriors</h3>
-          <p>Team Building</p>
-        </article>
-        <article>
-          <img src="images/eco-explorers.jpg" alt="Eco-Explorers – Nature + Conservation">
-          <h3>Eco-Explorers</h3>
-          <p>Nature + Conservation</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Certification Courses Section -->
-    <section id="courses">
-      <h2>Certification Courses</h2>
-      <ul>
-        <li>Titanic Survivor (Level 1) – Beginner</li>
-        <li>Lord of the Splash – Intermediate</li>
-        <li>Certified Rapid Psychopath – Advanced</li>
-        <li>River Whisperer – Pro Guide License</li>
-      </ul>
-    </section>
-
-    <!-- Buffet & Food Challenges Section -->
-    <section id="buffet">
-      <h2>The Hungry Paddler Riverside Grill</h2>
-      <div class="food-grid">
+    <!-- Adventures -->
+    <section id="adventure">
+      <h2>Adventure Awaits You!</h2>
+      <div class="adventure-grid">
         <figure>
-          <img src="images/bowl-of-the-gods.jpg" alt="Bowl of the Gods Food Challenge – 40% OFF next trip if conquered">
-          <figcaption>"Bowl of the Gods" – 40% OFF next trip if conquered</figcaption>
+          <img src="images/raft-extreme.jpg" alt="Rapid Rebels">
+          <figcaption>Rapid Rebels</figcaption>
+        </figure>
+        <figure>
+          <img src="images/raft-moonlight.jpg" alt="Full Moon Madness">
+          <figcaption>Full Moon Madness</figcaption>
+        </figure>
+        <figure>
+          <img src="images/raft-team.jpg" alt="Corporate Warriors">
+          <figcaption>Corporate Warriors</figcaption>
+        </figure>
+        <figure>
+          <img src="images/raft-eco.jpg" alt="Eco-Explorers">
+          <figcaption>Eco-Explorers</figcaption>
+        </figure>
+        <figure>
+          <img src="images/raft-family.jpg" alt="Baby Rapids">
+          <figcaption>Baby Rapids</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Karaoke & Events Section -->
+    <!-- Trip Types -->
+    <section id="trip-types">
+      <h2>Rafting Trip Types</h2>
+      <div class="grid">
+        <a href="trips.html#baby-rapids" class="trip-link">
+          <article>
+            <img src="images/baby-rapids.jpg" alt="Baby Rapids">
+            <h3>Baby Rapids</h3>
+            <p>Family-Friendly | Class I–II</p>
+          </article>
+        </a>
+        <a href="trips.html#rapid-rebels" class="trip-link">
+          <article>
+            <img src="images/rapid-rebels.jpg" alt="Rapid Rebels">
+            <h3>Rapid Rebels</h3>
+            <p>Extreme | Class IV–V</p>
+          </article>
+        </a>
+        <!-- repeat for the other three... -->
+      </div>
+    </section>
+
+    <!-- Certification Courses -->
+    <section id="courses">
+      <h2>Certification Courses</h2>
+      <ul>
+        <li><a href="courses.html#titanic-survivor">Titanic Survivor (Level 1) – Beginner</a></li>
+        <li><a href="courses.html#lord-of-the-splash">Lord of the Splash – Intermediate</a></li>
+        <li><a href="courses.html#certified-rapid-psychopath">Certified Rapid Psychopath – Advanced</a></li>
+        <li><a href="courses.html#river-whisperer">River Whisperer – Pro Guide License</a></li>
+      </ul>
+    </section>
+
+    <!-- Buffet & Food Challenges -->
+    <section id="buffet">
+      <h2>The Hungry Paddler Riverside Grill</h2>
+      <figure>
+        <img src="images/bowl-of-the-gods.jpg" alt="Bowl of the Gods Food Challenge – 40% OFF next trip if conquered">
+        <figcaption>"Bowl of the Gods" – 40% OFF next trip if conquered</figcaption>
+      </figure>
+    </section>
+
+    <!-- Karaoke & Events -->
     <section id="events">
       <h2>Karaoke & Events</h2>
       <figure>
-        <img src="images/karaoke-night.jpg" alt="Weekly Karaoke Nights – Sober, 6PM–8PM">
+        <img src="images/karaoke-night.jpg" alt="Weekly Karaoke Nights">
         <figcaption>Weekly Karaoke Nights (Sober, 6PM–8PM)</figcaption>
       </figure>
       <figure>
-        <img src="images/private-event.jpg" alt="Private Event Rentals – Birthdays, Weddings">
+        <img src="images/private-event.jpg" alt="Private Event Rentals">
         <figcaption>Private Event Rentals (Birthdays, Weddings)</figcaption>
       </figure>
     </section>
 
-    <!-- Contact & Social Media Section -->
+    <!-- Contact & Social Media -->
     <section id="contact-details">
       <h2>Contact & Social Media</h2>
-      <ul class="contact-list">
+      <ul>
         <li>777 Rapid Rebellion Rd, Canyonville, MX</li>
         <li>Instagram: @RowOrDieRafting</li>
         <li>WhatsApp: +1 555-ROW-DIE</li>
@@ -136,10 +145,12 @@
   </main>
 
   <footer>
-  <p>&copy; 2025 Row or Die Rafting. Saori Dominguez.</p>
-  <nav class="socialmedia">
-    <a href="#"><img src="images/icon-facebook.png"   alt="Facebook"></a>
-    <a href="#"><img src="images/icon-instagram.png"  alt="Instagram"></a>
-    <a href="#"><img src="images/icon-youtube.png"    alt="YouTube"></a>
-  </nav>
-</footer>
+    <p>&copy; 2025 Row or Die Rafting. Saori Dominguez.</p>
+    <nav class="socialmedia">
+      <a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a>
+    </nav>
+  </footer>
+</body>
+</html>
