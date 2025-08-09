@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Row or Die Rafting – address, phone, email, map, team, and a contact form to reach us." />
+  <meta name="author" content="Saori Dominguez" />
+  <title>Contact Us – Row or Die Rafting</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Site CSS (same as About) -->
+  <link rel="stylesheet" href="styles/rafting-v2.css" />
+</head>
+<body>
+  <!-- HEADER (same as About) -->
+  <header>
+  <img src="images/rowordie-logo.png" alt="Row or Die Rafting logo" />
+  <h1 class="site-title">Row or Die Rafting</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="trips.html">Trips</a></li>
+      <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <!-- COMPANY INFO + MAP -->
+    <section id="company" class="company">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <address class="contact-card">
+          <p><strong>Address</strong><br>777 Rapid Rebellion Rd<br>Canyonville, MX</p>
+          <p><strong>Phone</strong><br><a href="tel:+1555769343">+1 (555) 769-343</a></p>
+          <p><strong>Email</strong><br><a href="mailto:book@rowordierafting.com">book@rowordierafting.com</a></p>
+          <p><strong>Hours</strong><br>Mon–Sat: 8:00–18:00</p>
+        </address>
+
+        <div class="map-embed">
+          <!-- No inline style per instructions -->
+          <iframe
+            src="https://www.google.com/maps?q=777%20Rapid%20Rebellion%20Rd,%20Canyonville,%20MX&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Row or Die Rafting location on Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM (3 employees with captions) -->
+    <section id="team" class="team">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <figure>
+          <img src="images/employee-ana.jpg" alt="Ana smiling in a raft guide helmet" />
+          <figcaption>Ana “River Whisperer” — Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee-bruno.jpg" alt="Bruno smiling with life jacket" />
+          <figcaption>Bruno “Rapid Tamer” — Safety Officer</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee-camila.jpg" alt="Camila smiling by the riverside" />
+          <figcaption>Camila “Flow Master” — Trip Coordinator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact-form" class="contact-form">
+      <h2>Send Us a Message</h2>
+
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Purpose of Your Message</legend>
+          <div class="radio-group">
+            <label class="inline">
+              <input type="radio" name="purpose" value="general" required />
+              General Inquiry
+            </label>
+            <label class="inline">
+              <input type="radio" name="purpose" value="reservation" />
+              Reservation Question
+            </label>
+            <label class="inline">
+              <input type="radio" name="purpose" value="suggestion" />
+              Website Suggestion
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Message</legend>
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" name="subscribe" value="yes" />
+            Please subscribe me to the monthly newsletter
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Row or Die Rafting. Saori Dominguez. ·
+      <!-- Link to your Moqups wireframe -->
+      <a href="https://app.moqups.com/imHBakUd6F5LaZ3q8JrA30TDHS8Npetg/view/page/ad64222d5"
+         target="_blank" rel="noopener">Contact Page Wireframe</a>
+    </p>
+    <nav class="socialmedia">
+      <a href="#"><img src="images/icon-facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/icon-instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="images/icon-youtube.png" alt="YouTube" /></a>
+    </nav>
+  </footer>
+</body>
+</html>
