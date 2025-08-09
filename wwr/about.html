@@ -1,28 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About Row or Die Rafting – History, mission and offerings.">
-  <meta name="author" content="Saori Dominguez">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Row or Die Rafting – History, mission and adventures." />
+  <meta name="author" content="Saori Dominguez" />
   <title>About Us – Row or Die Rafting</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: preconnect + font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
+  <!-- HEADER (Grid: img | h1 | nav) -->
   <header>
-    <img src="images/rowordie-logo.png" alt="Row or Die Rafting Logo">
-    <h1>Row or Die Rafting</h1>
+    <img src="images/rowordie-logo.png" alt="Row or Die Rafting logo" />
+
+    <!-- site title per Grid Header with Flex Nav example -->
+    <h1 class="site-title">Row or Die Rafting</h1>
+
     <nav>
       <ul>
+        <!-- per project spec these point to future pages inside /wwr -->
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -30,126 +36,76 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- HERO -->
     <div class="hero">
-      <img src="images/rafting-hero.jpg" alt="Rafting in rapids">
-      <h2>We turn river chaos into core memories.</h2>
-      <article>
-        <img src="images/raft-family.jpg" alt="Happy family rafting">
+      <img src="images/rafting-hero.jpg" alt="Rafting through powerful whitewater rapids" />
+
+      <!-- Large centered H1 as in the wireframe -->
+      <h1 class="hero-title">White Water Rafting</h1>
+
+      <!-- Centered box with text and a right-floated image -->
+      <article class="hero-box">
         <p>
-          Whether you're here to conquer Class V rapids or just survive family bonding, our certified guides guarantee adrenaline, safety, and post-trip bragging rights. No passengers—only paddle warriors.
+          Whether you're here to conquer Class V rapids or just survive family bonding,
+          our certified guides guarantee adrenaline, safety, and post-trip bragging rights.
+          No passengers—only paddle warriors.
         </p>
+        <img src="images/raft-family.jpg" alt="Happy family rafting together" />
       </article>
     </div>
 
-    <!-- History -->
-    <section id="history">
+    <!-- HISTORY (centered heading + 3 columns: text – image – text) -->
+    <section id="history" class="history">
       <h2>History</h2>
-      <p>
-        Born from a 2015 bet between five river-obsessed rebels, Row or Die started with one rusty raft and zero common sense. Today, we’ve flipped over 2,000 tourists (safely), served 10,000 ‘Birria Beast’ tacos, and turned karaoke nights into extreme sports. The rapids? Still winning. The stories? Unforgettable.
-      </p>
+      <div class="history-grid">
+        <p>
+          Born from a 2015 bet between five river-obsessed rebels, Row or Die started with one rusty raft and
+          zero common sense. Today, we’ve flipped over 2,000 tourists (safely) and turned karaoke nights into extreme sports.
+        </p>
+        <img src="images/raft-eco.jpg" alt="Historic rafting moment in canyon" />
+        <p>
+          We grew by focusing on safety, skilled guides, and unforgettable stories on every trip.
+          The rapids keep winning. The stories? Unforgettable.
+        </p>
+      </div>
     </section>
 
-    <!-- Adventures -->
+    <!-- ADVENTURE (5 figures in a row with captions) -->
     <section id="adventure">
       <h2>Adventure Awaits You!</h2>
       <div class="adventure-grid">
         <figure>
-          <img src="images/raft-extreme.jpg" alt="Rapid Rebels">
-          <figcaption>Rapid Rebels</figcaption>
+          <img src="images/raft-extreme.jpg" alt="Rafting a steep drop with heavy spray" />
+          <figcaption>Los Dientes del Diablo</figcaption>
         </figure>
         <figure>
-          <img src="images/raft-moonlight.jpg" alt="Full Moon Madness">
-          <figcaption>Full Moon Madness</figcaption>
+          <img src="images/raft-moonlight.jpg" alt="Rafting at night under the moon" />
+          <figcaption>Half Day Adventure</figcaption>
         </figure>
         <figure>
-          <img src="images/raft-team.jpg" alt="Corporate Warriors">
-          <figcaption>Corporate Warriors</figcaption>
+          <img src="images/raft-team.jpg" alt="Team paddling in sync through a wave" />
+          <figcaption>Devil’s Elbow</figcaption>
         </figure>
         <figure>
-          <img src="images/raft-eco.jpg" alt="Eco-Explorers">
-          <figcaption>Eco-Explorers</figcaption>
+          <img src="images/raft-eco.jpg" alt="Raft floating through a forested canyon" />
+          <figcaption>Big Mallard</figcaption>
         </figure>
         <figure>
-          <img src="images/raft-family.jpg" alt="Baby Rapids">
-          <figcaption>Baby Rapids</figcaption>
+          <img src="images/raft-family.jpg" alt="Smiling group after a splash" />
+          <figcaption>Pine Creek Rapid</figcaption>
         </figure>
       </div>
     </section>
-
-    <!-- Trip Types -->
-    <section id="trip-types">
-      <h2>Rafting Trip Types</h2>
-      <div class="grid">
-        <a href="trips.html#baby-rapids" class="trip-link">
-          <article>
-            <img src="images/baby-rapids.jpg" alt="Baby Rapids">
-            <h3>Baby Rapids</h3>
-            <p>Family-Friendly | Class I–II</p>
-          </article>
-        </a>
-        <a href="trips.html#rapid-rebels" class="trip-link">
-          <article>
-            <img src="images/rapid-rebels.jpg" alt="Rapid Rebels">
-            <h3>Rapid Rebels</h3>
-            <p>Extreme | Class IV–V</p>
-          </article>
-        </a>
-        <!-- repeat for the other three... -->
-      </div>
-    </section>
-
-    <!-- Certification Courses -->
-    <section id="courses">
-      <h2>Certification Courses</h2>
-      <ul>
-        <li><a href="courses.html#titanic-survivor">Titanic Survivor (Level 1) – Beginner</a></li>
-        <li><a href="courses.html#lord-of-the-splash">Lord of the Splash – Intermediate</a></li>
-        <li><a href="courses.html#certified-rapid-psychopath">Certified Rapid Psychopath – Advanced</a></li>
-        <li><a href="courses.html#river-whisperer">River Whisperer – Pro Guide License</a></li>
-      </ul>
-    </section>
-
-    <!-- Buffet & Food Challenges -->
-    <section id="buffet">
-      <h2>The Hungry Paddler Riverside Grill</h2>
-      <figure>
-        <img src="images/bowl-of-the-gods.jpg" alt="Bowl of the Gods Food Challenge – 40% OFF next trip if conquered">
-        <figcaption>"Bowl of the Gods" – 40% OFF next trip if conquered</figcaption>
-      </figure>
-    </section>
-
-    <!-- Karaoke & Events -->
-    <section id="events">
-      <h2>Karaoke & Events</h2>
-      <figure>
-        <img src="images/karaoke-night.jpg" alt="Weekly Karaoke Nights">
-        <figcaption>Weekly Karaoke Nights (Sober, 6PM–8PM)</figcaption>
-      </figure>
-      <figure>
-        <img src="images/private-event.jpg" alt="Private Event Rentals">
-        <figcaption>Private Event Rentals (Birthdays, Weddings)</figcaption>
-      </figure>
-    </section>
-
-    <!-- Contact & Social Media -->
-    <section id="contact-details">
-      <h2>Contact & Social Media</h2>
-      <ul>
-        <li>777 Rapid Rebellion Rd, Canyonville, MX</li>
-        <li>Instagram: @RowOrDieRafting</li>
-        <li>WhatsApp: +1 555-ROW-DIE</li>
-        <li>Email: book@rowordierafting.com</li>
-      </ul>
-    </section>
+    <!-- nothing else between Adventure and Footer per wireframe -->
   </main>
 
+  <!-- FOOTER (icons to the right, horizontal) -->
   <footer>
     <p>&copy; 2025 Row or Die Rafting. Saori Dominguez.</p>
     <nav class="socialmedia">
-      <a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/icon-facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/icon-instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="images/icon-youtube.png" alt="YouTube" /></a>
     </nav>
   </footer>
 </body>
